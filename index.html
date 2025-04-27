@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/index.css" />
     <title>Petshop</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+      <aside class="sidebar">
+        <h1>
+          <span
+            ><img
+              src="./src/assets/icons/Dog-Duotone--Streamline-Phosphor.svg"
+              alt="Ícone mundo pet"
+              srcset="" /></span
+          >mundo pet
+        </h1>
+      </aside>
+
+    <div class="app">
+
+      <main class="main-content">
+        <header class="header">
+          <div class="header-text">
+            <h2>Sua agenda</h2>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
+          <div class="date-picker">
+            <img
+              src="./src/assets/icons/Calendar-Minimalistic--Streamline-Solar.svg"
+              alt="Ícone de calendário"
+            />
+            <input type="date" name="calendar" id="calendar" placeholder="27/04/2025" />
+            <img src="./src/assets/icons/Icon.svg" />
+          </div>
+        </header>
+
+        <div class="schedule">
+            <div class="period" id="morning">
+                <div class="period-header">
+                    <div class="flex">
+                        <img src="./src/assets/icons/Sun-Fog--Streamline-Solar.svg" alt="Ícone do sol">
+                        <h2>Manhã</h2>
+                    </div>
+                    <span>09h-12h</span>
+                </div>
+                <div class="appointmenst">
+                    <div class="appointment">
+                        <div class="flex">
+                            <h2>09:00</h2>
+                            <span><strong>Thor</strong> / Fernanda Costa</span>
+                        </div>
+                        <span>Vacinação</span>
+                        <button>Remover agendamento</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="period" id="afternoon">
+                <div class="period-header">
+                    <div class="flex">
+                        <img src="./src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg" alt="Ícone do sol" class="morning-icon">
+                        <h2>Tarde</h2>
+                    </div>
+                    <span>09h-12h</span>
+                </div>
+                <div class="appointmenst">
+                    <div class="appointment">
+                        <div class="flex">
+                            <h2>09:00</h2>
+                            <span><strong>Thor</strong> / Fernanda Costa</span>
+                        </div>
+                        <span>Vacinação</span>
+                        <button>Remover agendamento</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="period" id="night">
+                <div class="period-header">
+                    <div class="flex">
+                        <img src="./src/assets/icons/Moon-Stars--Streamline-Solar.svg" alt="Ícone do sol">
+                        <h2>Noite</h2>
+                    </div>
+                    <span>09h-12h</span>
+                </div>
+                <div class="appointmenst">
+                    <div class="appointment">
+                        <div class="flex">
+                            <h2>09:00</h2>
+                            <span><strong>Thor</strong> / Fernanda Costa</span>
+                        </div>
+                        <span>Vacinação</span>
+                        <button>Remover agendamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="new-schedule-btn" id="openModal">Novo agendamento</button>
+
+
+      </main>
+    </div>
+  </body>
 </html>

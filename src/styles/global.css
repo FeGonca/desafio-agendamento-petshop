@@ -47,3 +47,19 @@
     --l-sm: 700 0.75rem/1 var(--ff-inter);
     --link: 500 0.75rem/1 var(--ff-inter);
 }
+
+body {
+    background-color: #14151D;
+    height: 100vh;
+}
+
+.app {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}

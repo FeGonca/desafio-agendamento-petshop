@@ -1,1 +1,143 @@
 @import url(./global.css);
+
+.sidebar {
+    background: #2E2C30;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    color: var(--background-brand);
+    border-radius: 0px 0px 12px 0px;
+    width: 160px;
+    
+    & h1 {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Inter";
+    }
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+    width: 50rem;
+    margin: auto;
+
+    & .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        & .header-text {
+            & h2 {
+                font: var(--title);
+                color: var(--content-primary);
+            }
+
+            & p {
+                font: var(--p-md);
+                color: var(--content-secondary);
+            }
+
+        }
+    }
+
+}
+
+
+.date-picker {
+    display: flex;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 0.75rem;
+
+    display: flex;
+    gap: 0.75rem;
+
+    & input {
+        padding: 0.5rem;
+        background: #14151D;
+        color: var(--content-secondary);
+        border: 0;
+        font-family: var(--ff-inter);
+        font-size: 1rem;
+    }
+}
+    
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & .period {
+        background-color: var(--background-tertiary);
+        border-radius: 0.625rem;
+
+        & .period-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1.25rem;
+            border-bottom: 1px solid #2E2C30;
+
+            & h2 {
+                font: var(--l-lg);
+                color: var(--content-primary);
+            }
+            & span {
+                font: var(--l-lg);
+                color: var(--content-secondary);
+            }
+        }
+
+        & .appointmenst{
+            padding: 1.25rem;
+
+            & .appointment {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & h2 {
+                    font: var(--l-md);
+                    color: var(--content-primary);
+                }
+
+                & strong {
+                    font: var(--l-sm);
+                    color: var(--content-primary);
+                }
+
+                & span, button {
+                    font: var(--p-sm);
+                    color: var(--content-secondary);
+                    background: none;
+                    border: none;
+                }
+
+            } 
+        }
+    }
+}
+
+.new-schedule-btn {
+    background-color: var(--background-brand);
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+    border: 0;
+    border-radius: 8px;
+
+    position: absolute;
+    width: 218px;
+    height: 48px;
+
+    font: var(--l-md);
+    text-transform: uppercase;
+
+    margin-top: 2rem;
+}
