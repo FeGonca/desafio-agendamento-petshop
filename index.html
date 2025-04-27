@@ -7,19 +7,18 @@
     <title>Petshop</title>
   </head>
   <body>
-      <aside class="sidebar">
-        <h1>
-          <span
-            ><img
-              src="./src/assets/icons/Dog-Duotone--Streamline-Phosphor.svg"
-              alt="Ícone mundo pet"
-              srcset="" /></span
-          >mundo pet
-        </h1>
-      </aside>
+    <aside class="sidebar">
+      <h1>
+        <span
+          ><img
+            src="./src/assets/icons/Dog-Duotone--Streamline-Phosphor.svg"
+            alt="Ícone mundo pet"
+            srcset="" /></span
+        >mundo pet
+      </h1>
+    </aside>
 
     <div class="app">
-
       <main class="main-content">
         <header class="header">
           <div class="header-text">
@@ -34,77 +33,143 @@
               src="./src/assets/icons/Calendar-Minimalistic--Streamline-Solar.svg"
               alt="Ícone de calendário"
             />
-            <input type="date" name="calendar" id="calendar" placeholder="27/04/2025" />
+            <input
+              type="date"
+              name="calendar"
+              id="calendar"
+              placeholder="27/04/2025"
+            />
             <img src="./src/assets/icons/Icon.svg" />
           </div>
         </header>
 
         <div class="schedule">
-            <div class="period" id="morning">
-                <div class="period-header">
-                    <div class="flex">
-                        <img src="./src/assets/icons/Sun-Fog--Streamline-Solar.svg" alt="Ícone do sol">
-                        <h2>Manhã</h2>
-                    </div>
-                    <span>09h-12h</span>
-                </div>
-                <div class="appointmenst">
-                    <div class="appointment">
-                        <div class="flex">
-                            <h2>09:00</h2>
-                            <span><strong>Thor</strong> / Fernanda Costa</span>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </div>
-                </div>
+          <div class="period" id="morning">
+            <div class="period-header">
+              <div class="flex">
+                <img
+                  src="./src/assets/icons/Sun-Fog--Streamline-Solar.svg"
+                  alt="Ícone do sol"
+                />
+                <h2>Manhã</h2>
+              </div>
+              <span>09h-12h</span>
             </div>
+            <div class="appointmenst">
+              <div class="appointment">
+                <div class="flex">
+                  <h2>09:00</h2>
+                  <span><strong>Thor</strong> / Fernanda Costa</span>
+                </div>
+                <span>Vacinação</span>
+                <button>Remover agendamento</button>
+              </div>
+            </div>
+          </div>
 
-            <div class="period" id="afternoon">
-                <div class="period-header">
-                    <div class="flex">
-                        <img src="./src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg" alt="Ícone do sol" class="morning-icon">
-                        <h2>Tarde</h2>
-                    </div>
-                    <span>09h-12h</span>
-                </div>
-                <div class="appointmenst">
-                    <div class="appointment">
-                        <div class="flex">
-                            <h2>09:00</h2>
-                            <span><strong>Thor</strong> / Fernanda Costa</span>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </div>
-                </div>
+          <div class="period" id="afternoon">
+            <div class="period-header">
+              <div class="flex">
+                <img
+                  src="./src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg"
+                  alt="Ícone do sol"
+                  class="morning-icon"
+                />
+                <h2>Tarde</h2>
+              </div>
+              <span>09h-12h</span>
             </div>
+            <div class="appointmenst">
+              <div class="appointment">
+                <div class="flex">
+                  <h2>09:00</h2>
+                  <span><strong>Thor</strong> / Fernanda Costa</span>
+                </div>
+                <span>Vacinação</span>
+                <button>Remover agendamento</button>
+              </div>
+            </div>
+          </div>
 
-            <div class="period" id="night">
-                <div class="period-header">
-                    <div class="flex">
-                        <img src="./src/assets/icons/Moon-Stars--Streamline-Solar.svg" alt="Ícone do sol">
-                        <h2>Noite</h2>
-                    </div>
-                    <span>09h-12h</span>
-                </div>
-                <div class="appointmenst">
-                    <div class="appointment">
-                        <div class="flex">
-                            <h2>09:00</h2>
-                            <span><strong>Thor</strong> / Fernanda Costa</span>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </div>
-                </div>
+          <div class="period" id="night">
+            <div class="period-header">
+              <div class="flex">
+                <img
+                  src="./src/assets/icons/Moon-Stars--Streamline-Solar.svg"
+                  alt="Ícone do sol"
+                />
+                <h2>Noite</h2>
+              </div>
+              <span>09h-12h</span>
             </div>
+            <div class="appointmenst">
+              <div class="appointment">
+                <div class="flex">
+                  <h2>09:00</h2>
+                  <span><strong>Thor</strong> / Fernanda Costa</span>
+                </div>
+                <span>Vacinação</span>
+                <button>Remover agendamento</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <button class="new-schedule-btn" id="openModal">Novo agendamento</button>
-
-
+        <button class="new-schedule-btn" id="openModal">
+          Novo agendamento
+        </button>
       </main>
+
+      <!-- Modal -->
+      <div class="modal show" id="modal">
+        <div class="modal-content">
+          <h2>Agende um atendimento</h2>
+          <p>Preencha os dados do cliente para realizar o agendamento:</p>
+
+          <form>
+            <label>Nome do tutor</label>
+            <input type="text" placeholder="Nome do tutor" />
+
+            <label>Nome do pet</label>
+            <input type="text" placeholder="Nome do pet" />
+
+            <label>Telefone</label>
+            <input type="text" placeholder="(00) 0 0000-0000" />
+
+            <label>Descrição do serviço</label>
+            <textarea placeholder="Descrição do serviço"></textarea>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Data</label>
+                <input type="date" />
+              </div>
+              <div class="form-group">
+                <label>Hora</label>
+                <input type="time" />
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Agendar</button>
+          </form>
+        </div>
+      </div>
     </div>
+
+    <script>
+        const openModal = document.getElementById('openModal');
+        const modal = document.getElementById('modal');
+
+        openModal.addEventListener('click', () => {
+            modal.classList.add('show');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+    </script>
+
   </body>
 </html>
