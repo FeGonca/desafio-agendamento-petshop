@@ -1,8 +1,16 @@
 {
+  "name": "petshop",
+  "description": "Aplicação Web para agendamento de atendimento a clientes",
+  "author": "Felipe Gonçalves Vieira",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333"
+    "server": "json-server --watch server.json --port 3333",
+    "build": "webpack"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
   }
 }
