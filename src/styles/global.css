@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* content */
+    --content-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+    /* background */
+    --background-primary: #151515;
+    --background-secondary: #1E1E1E;
+    --background-tertiary: #23242C;
+    --background-brand: #9282FA;
+    --background-highlights: #BDB4FA;
+
+    /* border */
+    --border-primary: #3E3C41;
+    --border-secondary: #86818C;
+    --border-brand: #9282FA;
+    --border-divisor: #353339;
+
+    /* accent */
+    --accent-blue: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #F09102;
+    --accent-orange-light: #75501B;
+
+    /* font family inter tight */
+    --ff-inter-tight : "Inter Tight", sans-serif;
+    --title: 700 1.5rem/2 var(--ff-inter-tight);
+
+    /* font family inter*/
+    --ff-inter: "Inter", sans-serif;
+    --p-md: 500 0.875rem/1.5 var(--ff-inter);
+    --p-sm: 500 0.75rem/1 var(--ff-inter);
+    --l-lg: 700 1rem/0.875 var(--ff-inter);
+    --l-md: 700 0.875rem/1.5 var(--ff-inter);
+    --l-sm: 700 0.75rem/1 var(--ff-inter);
+    --link: 500 0.75rem/1 var(--ff-inter);
+}
