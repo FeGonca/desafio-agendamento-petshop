@@ -24,8 +24,17 @@ module.exports = {
         new HtmlWebpackPlugin(
             {
                 template: path.resolve(__dirname, "index.html"),
+                favicon: path.resolve("src", "assets", "icons", "Dog-Duotone--Streamline-Phosphor.svg"),
             }
         )
-    ]
+    ],
 
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            },
+        ],
+    }
 }
