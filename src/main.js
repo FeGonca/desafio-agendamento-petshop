@@ -9,8 +9,10 @@ import "./styles/index.css"
 import "./styles/modal.css"
 
 import dayjs from "dayjs"
-console.log(dayjs().format("HH:mm"));
 
 // JS
 import "./modules/form/submit.js"
 import "./modules/schedules/schedule.js"
+import "./modules/form/changeDate.js"
+
+import "./modules/page-load.js"
