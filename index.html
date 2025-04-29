@@ -121,32 +121,36 @@
       </main>
 
       <!-- Modal -->
-      <div class="modal" id="modal">
+      <div class="modal show" id="modal">
         <div class="modal-content">
           <h2>Agende um atendimento</h2>
           <p>Preencha os dados do cliente para realizar o agendamento:</p>
 
           <form>
             <label>Nome do tutor</label>
-            <input type="text" placeholder="Nome do tutor" />
+            <input type="text" id="nameTutor" name="nameTutor" placeholder="Nome do tutor" required/>
 
             <label>Nome do pet</label>
-            <input type="text" placeholder="Nome do pet" />
+            <input type="text" id="namePet" name="namePet" placeholder="Nome do pet" required/>
 
             <label>Telefone</label>
-            <input type="text" placeholder="(00) 0 0000-0000" />
+            <input type="text" id="numPhone" name="numPhone" placeholder="(00) 0 0000-0000" required/>
 
             <label>Descrição do serviço</label>
-            <textarea placeholder="Descrição do serviço"></textarea>
+            <textarea id="serviceDescription" name="serviceDescription" placeholder="Descrição do serviço" required></textarea>
 
             <div class="form-row">
               <div class="form-group">
                 <label>Data</label>
-                <input type="date" />
+                <input type="date" 
+                id="date"
+                name="date"/>
               </div>
               <div class="form-group">
                 <label>Hora</label>
-                <input type="time" />
+                <input type="time" 
+                id="time"
+                name="time"/>
               </div>
             </div>
 
