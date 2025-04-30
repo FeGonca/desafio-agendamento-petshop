@@ -2,6 +2,7 @@
 
 import dayjs from "dayjs";
 import { scheduleNew } from "../../services/schedule-new.js"
+import { schedulesDay } from "../schedules/schedule.js";
 
 const form = document.querySelector("form");
 const scheduleTutor = document.getElementById("nameTutor");
@@ -43,6 +44,18 @@ form.onsubmit = async (event) => {
         date,
         time
     });
+
+    // Limpa os campos do formulário.
+    scheduleTutor.value = "";
+    schedulePet.value = "";
+    schedulePhone.value = "";
+    scheduleDesc.value = "";
+    scheduleDate.value = inputToday;
+    scheduleTime.value = dayjs(new dayjs()).format("HH:mm");
+    scheduleDate.min = inputToday;
+
+    // Chama a função para recarregar os agendamentos.
+    schedulesDay();
     
     
 }
