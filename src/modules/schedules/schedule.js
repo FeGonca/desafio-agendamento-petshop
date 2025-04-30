@@ -1,5 +1,6 @@
 "use sttrict"
 import { scheduleFetchByDay } from "../../services/schedule-fetch-by-day.js";
+import { showSchedules } from "./show.js";
 
 
 export async function schedulesDay() {
@@ -12,6 +13,6 @@ export async function schedulesDay() {
     const dailySchedules = await scheduleFetchByDay({ date });
 
     // Exibe os agendamentos
-    
+    showSchedules({dailySchedules});
         
 }

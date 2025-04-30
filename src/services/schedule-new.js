@@ -1,6 +1,6 @@
 import { apiConfig } from "./api-config.js";
 
-export async function scheduleNew({id, tutor, pet, phone, description, date, time }) {
+export async function scheduleNew({id, tutor, pet, phone, desc, date, time }) {
     try { 
         // Faz requisição para enviar os dados
         await fetch(`${apiConfig.baseURL}/schedules`, {
@@ -8,7 +8,7 @@ export async function scheduleNew({id, tutor, pet, phone, description, date, tim
             headers: {
                 "Content-type": "application/json"
             },
-            body: JSON.stringify({ id, tutor, pet, phone, description, date, time })
+            body: JSON.stringify({ id, tutor, pet, phone, desc, date, time })
         })
 
         alert("Agedamento realizando com sucesso!")
