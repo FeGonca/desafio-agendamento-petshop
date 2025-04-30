@@ -21,6 +21,7 @@ export function showSchedules({dailySchedules}) {
         dailySchedules.forEach((schedule) => {
             const item = document.createElement("div");
             item.classList.add("appointment");
+            item.setAttribute("data-id", schedule.id);
 
             const timeName = document.createElement("div");
             timeName.classList.add("flex");
