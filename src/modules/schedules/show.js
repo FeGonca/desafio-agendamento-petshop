@@ -14,7 +14,7 @@ export function showSchedules({dailySchedules}) {
     try {
         // Limpa os agendamentos
         periodMorning.innerHTML = "";
-        // periodAfternoon.innerHTML = "";
+        periodAfternoon.innerHTML = "";
         periodNight.innerHTML = "";
 
         // Renderiza os agendamentos por período

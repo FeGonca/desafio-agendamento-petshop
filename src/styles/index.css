@@ -119,6 +119,10 @@
                     border: none;
                 }
 
+                button:hover {
+                    text-decoration: underline;
+                }
+
             } 
         }
     }
