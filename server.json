@@ -1,31 +1,3 @@
 {
-  "schedules": [
-    {
-      "id": 1745974179033,
-      "tutor": "Felipe",
-      "pet": "Billy",
-      "phone": "11953764921",
-      "desc": "Banho e Tosa",
-      "date": "2025-04-29",
-      "time": "21:48"
-    },
-    {
-      "id": 1745974225046,
-      "tutor": "Ailton",
-      "pet": "Marrom",
-      "phone": "11953764921",
-      "desc": "Banho e Tosa",
-      "date": "2025-04-30",
-      "time": "09:00"
-    },
-    {
-      "id": 1745974244682,
-      "tutor": "Edna",
-      "pet": "Titi",
-      "phone": "11953764921",
-      "desc": "Banho e Tosa",
-      "date": "2025-04-30",
-      "time": "10:00"
-    }
-  ]
+  "schedules": []
 }

@@ -33,7 +33,7 @@ form.onsubmit = async (event) => {
     const desc = scheduleDesc.value;
     const date = scheduleDate.value;
     const time = scheduleTime.value;
-    const id = new Date().getTime();
+    const id = new Date().getTime().toString();
 
     await scheduleNew({
         id,

@@ -15,5 +15,6 @@ import "./modules/form/submit.js"
 import "./modules/schedules/schedule.js"
 import "./modules/form/changeDate.js"
 import "./modules/form/openModal.js"
+import "./modules/schedules/cancel.js"
 
 import "./modules/page-load.js"
